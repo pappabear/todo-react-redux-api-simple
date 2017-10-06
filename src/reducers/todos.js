@@ -5,8 +5,9 @@ const todos = (state = [], action) => {
         ...state,
         {
           id: action.id,
-          text: action.text,
-          completed: false
+          title: action.title,
+          completed: false,
+          owner: 'chip.irek@gmail.com'
         }
       ]
     case 'TOGGLE_TODO':
